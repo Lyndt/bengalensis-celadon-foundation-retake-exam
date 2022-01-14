@@ -15,4 +15,8 @@ public class MultiplyItemsInMatrix {
                 {18, 0, 10, 6}
         };
     }
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
+    }
+
 }
