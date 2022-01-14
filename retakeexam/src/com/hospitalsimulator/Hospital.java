@@ -21,7 +21,8 @@ public class Hospital {
             patientNextToTreat.treat();
         }
     }
-    public Queue getPatientQueue(){
+
+    public Queue getPatientQueue() {
         return patientQueue;
     }
 
