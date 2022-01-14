@@ -1,0 +1,33 @@
+computer-shop
+ |--desktop
+ |   |--.git
+ |   |--instock
+ |   |   └--summary.csv
+ |   └--in-transit
+ |       └--summary.csv
+ └--laptop
+     |--.git
+     |--transit-summary.csv
+     |--in-stock
+     |   └--summary.csv
+     └--in-transit
+
+     computer-shop/
+
+     rn desktop/instock/ desktop/in-stock/
+
+     mv laptop/transit-summary.csv laptop/in-transit/summary.csv
+
+     head -n -2 laptop/in-stock/summary.csv > laptop/in-stock/temp.csv
+     mv laptop/in-stock/temp.csv laptop/in-stock/summary.csv
+
+     cd desktop
+     git status
+     git add .
+     git commit -m "repository changes"
+     cd ..
+     cd laptop
+     git status
+     git add .
+     git commit -m "repository changes2"
+
