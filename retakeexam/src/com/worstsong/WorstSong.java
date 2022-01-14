@@ -11,7 +11,8 @@ public class WorstSong {
         //TODO: get path to filename from main
         System.out.println(worstYearInMusic("src/com/worstsong/100worst.csv"));
     }
-        //TODO: I found nice solution with scanner(https://stackoverflow.com/questions/13185727/reading-a-txt-file-using-scanner-class-in-java/13185765)
+
+    //TODO: I found nice solution with scanner(https://stackoverflow.com/questions/13185727/reading-a-txt-file-using-scanner-class-in-java/13185765)
     public static String worstYearInMusic(String filename) throws FileNotFoundException {
         Map<String, Integer> yearSongCounterMap = new HashMap<>();
         try {
@@ -31,13 +32,20 @@ public class WorstSong {
                 }
             }
         } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
+            System.out.println("File not found.");
         }
         int maxInt = 0;
         String maxYearValue = "";
 
+        for (Map.Entry<String, Integer> entry : yearSongCounterMap.entrySet()) {
+            if (maxInt < entry.getValue()) {
+                maxInt = entry.getValue();
+                maxYearValue = entry.getKey();
+            }
+        }
 
-        return null;
+
+        return maxYearValue;
 
     }
 
