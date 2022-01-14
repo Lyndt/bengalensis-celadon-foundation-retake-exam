@@ -7,17 +7,19 @@ public class Patient {
     private int treat;
 
     public Patient() {
-        this.patientSeverity = new Random().nextInt(1,10);
-        System.out.println(patientSeverity);
+        this.patientSeverity = new Random().nextInt(1, 10);
+
     }
-    public int getSeverinity(){
+
+    public int getPatientSeverity() {
         return patientSeverity;
     }
 
-    public static void main(String[] args) {
-        Patient patient = new Patient();
-        System.out.println(patient);
+    public void treat() throws Exception {
+        if (patientSeverity >= 1) {
+            patientSeverity--;
+        } else {
+            throw new Exception("treat cant go below zero.");
+        }
     }
-
-
 }
