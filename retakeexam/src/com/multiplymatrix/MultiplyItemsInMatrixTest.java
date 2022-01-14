@@ -1,4 +1,4 @@
-package com;
+package com.multiplymatrix;
 
 import org.junit.jupiter.api.Test;
 

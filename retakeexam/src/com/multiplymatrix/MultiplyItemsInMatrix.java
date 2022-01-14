@@ -1,4 +1,4 @@
-package com;
+package com.multiplymatrix;
 
 import java.util.Arrays;
 
