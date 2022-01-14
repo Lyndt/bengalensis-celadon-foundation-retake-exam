@@ -1,6 +1,6 @@
 package com.hospitalsimulator;
 
-public class SafeQueue extends QueueClass {
+public class SafeQueue extends Queue {
 
     @Override
     public Patient getNextPatient() {

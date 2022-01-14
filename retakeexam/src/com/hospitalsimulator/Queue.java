@@ -3,10 +3,10 @@ package com.hospitalsimulator;
 import java.util.ArrayList;
 import java.util.List;
 
-abstract public class QueueClass {
+abstract public class Queue {
     protected List<Patient> listOfPatients;
 
-    public QueueClass(){
+    public Queue(){
         listOfPatients = new ArrayList<>();
     }
     public void queuePatientUp(Patient patient){

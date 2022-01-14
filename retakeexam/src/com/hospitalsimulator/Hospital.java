@@ -6,7 +6,7 @@ public class Hospital {
     //TODO: queue (https://www.geeksforgeeks.org/queue-interface-java/)
     private Queue patientQueue;
 
-    public void Hospital(Queue patientQueue) {
+    public Hospital(Queue patientQueue) {
         this.patientQueue = patientQueue;
     }
 

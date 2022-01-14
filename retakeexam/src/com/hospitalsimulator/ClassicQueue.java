@@ -1,6 +1,6 @@
 package com.hospitalsimulator;
 
-public class ClassicQueue extends QueueClass {
+public class ClassicQueue extends Queue {
     private int currentNumber = 0;
 
     @Override
