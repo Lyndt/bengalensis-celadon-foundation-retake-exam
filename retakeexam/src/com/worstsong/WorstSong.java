@@ -32,7 +32,7 @@ public class WorstSong {
                 }
             }
         } catch (FileNotFoundException e) {
-            System.out.println("File not found.");
+            System.err.println("File not found.");
         }
         int maxInt = 0;
         String maxYearValue = "";
